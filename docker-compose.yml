@@ -1,0 +1,13 @@
+services:
+  analytics:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "3001:3001"
+    volumes:
+      - vww8swoscwg8wk8w048gcgco_open-webui:/app/backend/data
+
+volumes:
+  vww8swoscwg8wk8w048gcgco_open-webui:
+    external: true
